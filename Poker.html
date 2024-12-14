@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix-Or-Match</title>
+    <link rel="stylesheet" href="Poker.css">
+    <script src="Poker.js" async></script>
+    
+</head>
+<body>
+    <div class="overlay-text visible">
+        Click to start
+    </div>
+   <div id="game-over-text" class="overlay-text">
+        GAME OVER <br>
+        <span id="scored"></span>
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div id="Victory-text" class="overlay-text">
+        VICTORY
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div class="game-container">
+        <h1 class="page-title">Jingle-Mix-Or-Match</h1>
+        <div class="info">
+            <div>Time: <span id="timer">100</span>s</div>
+            <div>Score: <span id="score">0</span></div>
+        </div>
+        <div class="grid" id="grid"></div>
+        <button id="restartButton">Restart</button>
+    </div>
+    <script src="Poker.js"></script>
+</body>
+</html>
