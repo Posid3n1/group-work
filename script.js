@@ -6,7 +6,7 @@ const cardValues = [
 let firstCard = null;
 let secondCard = null;
 let score = 0;
-let timer = 500;
+let timer = 100;
 let intervalId;
 
 const grid = document.getElementById('grid');
@@ -117,11 +117,13 @@ function disableCards() {
 
 function restartGame() {
     clearInterval(intervalId);
-    timer = 500;
+    resetCards();
+    timer = 100;
     score = 0;
     scoreDisplay.textContent = score;
     timerDisplay.textContent = timer;
     startTimer();
+    createBoard();
 }
 
 restartButton.addEventListener('click', restartGame);
